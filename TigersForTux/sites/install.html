@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Installation</title>
+    <link rel="stylesheet" href="../assets/css/grid.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.4/jquery.touchSwipe.min.js"></script>
+    <script src="../assets/js/javascript.js"></script>
+    <script src="../assets/js/swipe.js" defer></script>
+
+</head>
+
+<body id='body' onload="setNavColor(246,218,72); onScrollBars();">
+
+    <div id="nav" class="sidenav">
+
+        <div id="hamMenu" class="bur" onclick="openNavBar()"></div>
+
+        <div class="search abc" onclick="search()"></div>
+
+        <div class="bookmark abc" onclick="bookmark()"></div>
+
+        <div class="gotop abc" onclick="goTop()"></div>
+
+    </div>
+
+    <div id="navO" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNavBar()">&times;</a>
+        <div class="moveTop">
+            <a class="top" href="../index.html">Homepage</a>
+        </div>
+
+        <div class="overlay-content">
+
+            <div class="left">
+                <h4 class="unixNav">GENERAL</h4>
+                <div class="linksAll">
+                    <a href="unix.html">About UNIX</a>
+                    <a href="linux.html">About LINUX</a>
+                    <a href="distros.html">Distros</a>
+                    <a href="apps.html">Essential Apps</a>
+                    <a href="linux_potential.html">Linux potential</a>
+                </div>
+            </div>
+
+            <div class="left">
+                <h4 class="linuxNav">GUIDES</h4>
+                <div class="linksAll">
+                    <a href="install.html">Installation</a>
+                    <a href="basic_commands.html">Commands</a>
+                    <a href="advanced_commands.html">Advanced Commands</a>
+                    <a href="errors.html">Common Errors</a>
+                    <a href="task_examples.html">Task examples</a>
+                    <a href="text_editors.html">Text Editors</a>
+
+                </div>
+
+            </div>
+            <div class="left">
+                <h4 class="ftNav">FILE TRANSFER</h4>
+                <div class="linksAll">
+                    <a href="file_transfer.html">File transfer protocols</a>
+                    <a href="server_client.html">Filezilla</a>
+                    <a href="lamp_stack.html">Lamp Stack</a>
+                </div>
+            </div>
+
+            <div class="left">
+                <h4 class="otherNav">ADDITIONAL</h4>
+                <div class="linksAll">
+                    <a href="op_systems.html">OS Comparison</a>
+                    <a href="software_dev_mod.html">Software Development & Modification</a>
+                    <a href="linux_osx.html">Linux & OS X</a>
+                    <a href="forum.html">Forum</a>
+                    <a href="sources.html">Sources</a>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <div id="moveRight" class="wrapper_2">
+
+        <header>
+            <h1>
+                INSTALLING LINUX
+            </h1>
+        </header>
+
+        <div class="logo">
+            <img id="icon" src="../assets/media/logo2.png" alt="logo">
+        </div>
+
+        <main>
+
+            <div id="content_grid_2">
+
+                <div class="text_cont">
+                    <h2>
+                        Where to start?
+                    </h2>
+                    <p>
+                        The first thing to learn is where can we access the kernel? For this, we can follow J. 'Wallen's article (2021) and start with the terminal window.
+                        <br />From there, we proceed by issuing the command ls /boot, which will display a file called vmlinuz-VERSION (where VERSION is the release name or number), and the vmlinuz file is the bootable Linux kernel (the z indicates the
+                        kernel is compressed).
+                        <br />
+                        <br />Aside from the mentioned file, we will find other important kernel files within that same directory, among which the article specified the following 3;
+                    </p>
+                    <ul>
+                        <li>
+                            &#x27A4; initrd: used as a small RAMdisk that extracts and executes the actual kernel file.
+                        </li>
+                        <li>
+                            &#x27A4; System.map: used for memory management, prior to the kernel loading.
+                        </li>
+                        <li>
+                            &#x27A4; config: instructs the kernel on what options and modules to load.
+                        </li>
+                    </ul>
+
+                </div>
+
+                <div class="img_cont">
+                    <img src="../assets/media/TestyTest.png" alt="img">
+                </div>
+
+                <div class="text_cont">
+                    <h2>
+                        The Modules
+                    </h2>
+                    <p>
+                        The element that requires further argumentation would be the modules. They are necessary for the System to establish communication with the hardware while also keeping the system memory in balance, and they add to the 'kernel's functionality. These modules
+                        can be managed by the following commands;
+                    </p>
+                    <ul>
+                        <li>
+                            &#x27A4; lsmod: lists all currently loaded kernel modules.
+                        </li>
+                        <li>
+                            &#x27A4; insmod: loads a kernel module into the running kernel.
+                        </li>
+                        <li>
+                            &#x27A4; rmmod: unloads a module from the running kernel.
+                        </li>
+                    </ul>
+
+                </div>
+
+                <div class="img_cont">
+                    <img src="../assets/media/TestyTest.png" alt="img">
+                </div>
+
+                <div class="text_cont">
+                    <h2>
+                        How it works
+                    </h2>
+                    <p>
+                        A common way to install Linux nowadays is via what is called a "virtual machine" ("VM") - a computer that is running within another computer that acts as its host. When installing Linux, one ought to choose a distro that best fits the desired usage or
+                        consult one of the websites which provide information on the current most popular distributions.
+                        <br />
+                        <br /> These distros create directories which feature both the kernel and other necessary software and are available for anyone to download. The sole thing one needs is the installer. This will be an ISO file that holds all the
+                        installation files, and here the user will most likely be asked to choose between 32-bit and 64-bit distros, so it is important to know the specs of the computer the installation is required on.
+                        <br />
+                        <br />Once the directory has been downloaded, a bootable installation media will be needed. For this, the user will need the ISO file, a software similar to the Rufus software and a USB drive with enough memory for the selected
+                        distro (this is not needed if the booting of the Linux system happens on the same computer the installation files are on).
+                        <br /> When launched, the Rufus software will prompt a tab in which the user adjusts the boot selection and chooses the device – in our case, the USB – and browse to the already downloaded ISO file. Once confirmed, Rufus shall
+                        erase all the files from the USB and create an installer drive.
+
+                    </p>
+
+                </div>
+
+                <div class="img_cont">
+                    <img src="../assets/media/TestyTest.png" alt="img">
+                </div>
+
+
+
+                <div class="text_cont">
+                    <h2>
+                        Final steps
+                    </h2>
+                    <p>
+                        Once booted, a "live" Linux desktop shall appear on the screen, but this does not mean Linux has been installed – it is merely running off the USB. This is where the user can try the System and explore its features. Once satisfied, proceed to install
+                        it on the computer. It will be installed the same as Windows.
+                    </p>
+
+                </div>
+
+                <div class="img_cont">
+                    <img src="../assets/media/TestyTest.png" alt="img">
+                </div>
+
+
+                <div class="text_cont">
+                    <h2>
+                        After installation
+                    </h2>
+                    <p>
+                        To further follow the guidelines defined by Hess (2021), once the system has been successfully installed, the user is prompted to log-in using the username and password created during installation. Upon log-in, we are placed into our home directory inside
+                        a shell or operating environment, and that same home directory is a subdirectory of the /home directory.
+                        <br />
+                        <br />The Linux filesystem is a hierarchical filesystem, similar to Microsoft Windows, where the root directory is located at the top level and is represented by the "/"symbol (Windows uses a drive letter, e.g., C: for the root
+                        directory).
+
+                    </p>
+
+                </div>
+
+                <div class="img_cont">
+                    <img src="../assets/media/TestyTest.png" alt="img">
+                </div>
+
+            </div>
+
+        </main>
+
+        <aside>
+            <div class="sticky">
+                <div class="aside_content">
+                    <h2>Explore</h2>
+
+                    <div id="gradient">
+                        <img class="scrollLogo" src="../assets/media/logo_white.png" alt="logo" />
+                    </div>
+
+                </div>
+
+                <div class="explore">
+                    <div class="relatedSites" onclick="window.location='basic_commands.html';">
+                        <h3>
+                            ABOUT <br /> LINUX
+                        </h3>
+                    </div>
+
+                    <div class="relatedSites" onclick="window.location='basic_commands.html';">
+                        <h3>
+                            LINUX COMMANDS
+                        </h3>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </aside>
+
+
+    </div>
+
+</body>
+
+</html>

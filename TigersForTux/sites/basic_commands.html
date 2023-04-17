@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Commands</title>
+    <link rel="stylesheet" href="../assets/css/grid.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.4/jquery.touchSwipe.min.js"></script>
+    <script src="../assets/js/javascript.js"></script>
+    <script src="../assets/js/swipe.js" defer></script>
+
+</head>
+
+<body id='body' onload="setNavColor(246,218,72); onScrollBars();">
+
+    <div id="nav" class="sidenav">
+
+        <div id="hamMenu" class="bur" onclick="openNavBar()"></div>
+
+        <div class="search abc" onclick="search()"></div>
+
+        <div class="bookmark abc" onclick="bookmark()"></div>
+
+        <div class="gotop abc" onclick="goTop()"></div>
+
+    </div>
+
+    <div id="navO" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNavBar()">&times;</a>
+        <div class="moveTop">
+            <a class="top" href="../index.html">Homepage</a>
+        </div>
+
+        <div class="overlay-content">
+
+            <div class="left">
+                <h4 class="unixNav">GENERAL</h4>
+                <div class="linksAll">
+                    <a href="unix.html">About UNIX</a>
+                    <a href="linux.html">About LINUX</a>
+                    <a href="distros.html">Distros</a>
+                    <a href="apps.html">Essential Apps</a>
+                    <a href="linux_potential.html">Linux potential</a>
+                </div>
+            </div>
+
+            <div class="left">
+                <h4 class="linuxNav">GUIDES</h4>
+                <div class="linksAll">
+                    <a href="install.html">Installation</a>
+                    <a href="basic_commands.html">Commands</a>
+                    <a href="advanced_commands.html">Advanced Commands</a>
+                    <a href="errors.html">Common Errors</a>
+                    <a href="task_examples.html">Task examples</a>
+                    <a href="text_editors.html">Text Editors</a>
+
+                </div>
+
+            </div>
+            <div class="left">
+                <h4 class="ftNav">FILE TRANSFER</h4>
+                <div class="linksAll">
+                    <a href="file_transfer.html">File transfer protocols</a>
+                    <a href="server_client.html">Filezilla</a>
+                    <a href="lamp_stack.html">Lamp Stack</a>
+                </div>
+            </div>
+
+            <div class="left">
+                <h4 class="otherNav">ADDITIONAL</h4>
+                <div class="linksAll">
+                    <a href="op_systems.html">OS Comparison</a>
+                    <a href="software_dev_mod.html">Software Development & Modification</a>
+                    <a href="linux_osx.html">Linux & OS X</a>
+                    <a href="forum.html">Forum</a>
+                    <a href="sources.html">Sources</a>
+                </div>
+            </div>
+
+
+
+        </div>
+
+    </div>
+
+    <div id="moveRight" class="wrapper_2">
+
+        <header>
+            <h1>BASIC COMMANDS</h1>
+        </header>
+
+        <div class="logo">
+            <img id="icon" src="../assets/media/logo2.png" alt="logo">
+        </div>
+
+        <main>
+
+            <div id="content_grid_2">
+
+                <div class="text_cont">
+                    <h2 class="command_h2">
+                        List content
+                    </h2>
+
+                    <h3 class="command">
+                        ls
+                    </h3>
+
+                    <ul>
+                        <li>
+                            &#x27A4; Shows files/directories in current directory
+                        </li>
+                        <li>
+                            &#x27A4; Directories – in blue
+                        </li>
+                        <li>
+                            &#x27A4; Files – in white
+                            <ul>
+                                <li>
+                                    &#x27A3; <span class="code">ls -R</span> (all files not only in directories but it also shows subdirectories)
+                                </li>
+                                <li>
+                                    &#x27A3; <span class="code">ls -al</span> (shows detailed information of the files)
+                                </li>
+                                <li>
+                                    &#x27A3; <span class="code">ls -a</span> (shows hidden files)
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <div class="img_cont">
+                    <img src="../assets/media/TestyTest.png" alt="img">
+                </div>
+
+
+                <div class="text_cont">
+                    <h2 class="command_h2">
+                        Display, copy & create text files
+                    </h2>
+                    <h3 class="command">
+                        cat
+                    </h3>
+
+                    <ol>
+                        <li>
+                            <span class="code">cat ></span> <span class="fill_in">filename</span> (creates text file)
+                        </li>
+                        <li>
+                            Write the content of the text file
+                        </li>
+                        <li>
+                            <span class="code">Ctrl + d</span> to exit
+                        </li>
+                        <li>
+                            cat filename - to see the file
+                            <ul>
+                                <li>
+                                    &#x27A3; <span class="code">cat</span> <span class="fill_in">file file2 >
+                                        newfilename</span> (combines 2 text files, cat newfilename to see the text file)
+                                </li>
+                            </ul>
+                        </li>
+                    </ol>
+
+                    <p class="indent">
+                        This command only works for text files.
+                    </p>
+
+                </div>
+
+                <div class="img_cont">
+                    <img src="../assets/media/TestyTest.png" alt="img">
+                </div>
+
+
+                <div class="text_cont">
+                    <h2 class="command_h2">
+                        Remove file
+                    </h2>
+
+                    <h3 class="command">
+                        rm
+                    </h3>
+
+                    <ul>
+                        <li>
+                            &#x27A4; Remove a file:
+                            <ul>
+                                <li>
+                                    &#x27A3; <span class="code">rm</span> <span class="fill_in">filename</span>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <div class="img_cont">
+                    <img src="../assets/media/TestyTest.png" alt="img">
+                </div>
+
+
+                <div class="text_cont">
+                    <h2 class="command_h2">
+                        Move file
+                    </h2>
+                    <h3 class="command">
+                        mv
+                    </h3>
+
+                    <ul>
+                        <li>
+                            &#x27A4; Move a file:
+                            <ul>
+                                <li>
+                                    &#x27A3; <span class="code">mv</span> <span class="fill_in">filename
+                                        new_file_location</span>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            &#x27A4; Renaming the file:
+                            <ul>
+                                <li>
+                                    &#x27A3; <span class="code">mv</span> <span class="fill_in">filename newname</span>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="img_cont">
+                    <img src="../assets/media/TestyTest.png" alt="img">
+                </div>
+
+
+                <div class="text_cont">
+                    <h2 class="command_h2">
+                        Sudo command
+                    </h2>
+                    <h3 class="command">
+                        sudo
+                    </h3>
+
+                    <ul>
+                        <li>
+                            &#x27A4; Allows the user to run programs with the security privileges of another user
+                            <li>
+                                &#x27A3; <span class="code">sudo</span> <span class="fill_in">your_command</span>
+                            </li>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <div class="img_cont">
+                    <img src="../assets/media/TestyTest.png" alt="img">
+                </div>
+
+
+                <div class="text_cont">
+                    <h2 class="command_h2">
+                        Make directory
+                    </h2>
+                    <h3 class="command">
+                        mkdir
+                    </h3>
+
+                    <ul>
+                        <li>
+                            &#x27A4; Create a directory:
+                        </li>
+                        <ul>
+                            <li>
+                                &#x27A3; <span class="code">mkdir</span> <span class="fill_in">directoryname</span> (or
+                                <span class="code">mkdir</span> <span class="fill_in">new_directory_location</span>)
+                            </li>
+                        </ul>
+
+                    </ul>
+
+                </div>
+
+                <div class="img_cont">
+                    <img src="../assets/media/TestyTest.png" alt="img">
+                </div>
+
+
+                <div class="text_cont">
+                    <h2 class="command_h2">
+                        Remove directory
+                    </h2>
+                    <h3 class="command">
+                        rmdir
+                    </h3>
+
+                    <ul>
+                        <li>
+                            &#x27A4; Remove a directory:
+                            <ul>
+                                <li>
+                                    &#x27A3; <span class="code">rmdir</span> <span class="fill_in">directoryname
+                                        newdirectoryname</span>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <div class="img_cont">
+                    <img src="../assets/media/TestyTest.png" alt="img">
+                </div>
+
+
+                <div class="text_cont">
+                    <h2 class="command_h2">
+                        Open manual
+                    </h2>
+                    <h3 class="command">
+                        man
+                    </h3>
+
+                    <ul>
+                        <li>
+                            &#x27A4; Reference book of a Linux operating system:
+                            <ul>
+                                <li>
+                                    &#x27A3; <span class="code">man mkdir</span> (shows manual for mkdir command)
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <div class="img_cont">
+                    <img src="../assets/media/TestyTest.png" alt="img">
+                </div>
+
+
+                <div class="text_cont">
+                    <h2 class="command_h2">
+                        Show history
+                    </h2>
+                    <h3 class="command">
+                        history
+                    </h3>
+
+                    <ul>
+                        <li>
+                            &#x27A4; Displays all past commands used
+                            <ul>
+                                <li>
+                                    &#x27A3; a built-in keyword of the shell - variations depending on which one is being used
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <div class="img_cont">
+                    <img src="../assets/media/TestyTest.png" alt="img">
+                </div>
+
+
+                <div class="text_cont">
+                    <h2 class="command_h2">
+                        Clear terminal
+                    </h2>
+                    <h3 class="command">
+                        clear
+                    </h3>
+
+                    <ul>
+                        <li>
+                            &#x27A4; Clears the terminal
+                            <ul>
+                                <li>
+                                    &#x27A3; the resulting display will depend on the terminal that is being used
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <div class="img_cont">
+                    <img src="../assets/media/TestyTest.png" alt="img">
+                </div>
+
+
+                <div class="text_cont">
+                    <h2 class="command_h2">
+                        Formatting
+                    </h2>
+                    <h3 class="command">
+                        pr
+                    </h3>
+
+                    <ul>
+                        <li>
+                            &#x27A4; Used for formatting the files for printing on the terminal
+                            <ul>
+                                <li>
+                                    &#x27A3; <span class="code">pr -x</span> <span class="fill_in">filename</span> (shows content divided in x columns)
+                                </li>
+                                <li>
+                                    &#x27A3; <span class="code">pr -h “Header“</span> <span class="fill_in">filename</span> (header value is assigned as the header)
+                                </li>
+                                <li>
+                                    &#x27A3; <span class="code">pr -n</span> <span class="fill_in">filename</span> (denotes all the lines in the file with numbers)
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <div class="img_cont">
+                    <img src="../assets/media/TestyTest.png" alt="img">
+                </div>
+
+
+                <div class="text_cont">
+                    <h2 class="command_h2">
+                        Print files
+                    </h2>
+                    <h3 class="command">
+                        lp, lpr
+                    </h3>
+
+                    <ul>
+                        <li>
+                            &#x27A4; Used for printing files
+                            <ul>
+                                <li>
+                                    &#x27A3; <span class="code">lp</span> <span class="fill_in">filename</span> (<span class="code">lpr</span> <span class="fill_in">filename</span>)
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            &#x27A4; Multiple copies:
+                            <ul>
+                                <li>
+                                    &#x27A3; <span class="code">10 : lp -n10</span> <span class="fill_in">filename</span> (<span class="code">lp
+                                        10</span> <span class="fill_in">testfile</span>)
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <div class="img_cont">
+                    <img src="../assets/media/TestyTest.png" alt="img">
+                </div>
+
+
+                <div class="text_cont">
+                    <h2 class="command_h2">
+                        Edit packages
+                    </h2>
+                    <h3 class="command">
+                        apt
+                    </h3>
+
+                    <ul>
+                        <li>
+                            &#x27A4; Installing and removing packages:
+                            <ul>
+                                <li>
+                                    &#x27A3; <span class="code">sudo apt - get update</span> (update all installed packages)
+                                </li>
+                                <li>
+                                    &#x27A3; <span class="code">sudo apt - get install</span> packagename (install packages)
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <div class="img_cont">
+                    <img src="../assets/media/TestyTest.png" alt="img">
+                </div>
+
+
+            </div>
+        </main>
+
+        <aside>
+            <div class="sticky">
+                <div class="aside_content">
+                    <h2 class="command_h2">Explore</h2>
+
+                    <div id="gradient">
+                        <img class="scrollLogo" src="../assets/media/logo_white.png" alt="logo" />
+                    </div>
+
+                </div>
+
+                <div class="explore">
+                    <div class="relatedSites" onclick="window.location='basic_commands.html';">
+                        <h3>
+                            ABOUT <br /> LINUX
+                        </h3>
+                    </div>
+
+                    <div class="relatedSites" onclick="window.location='basic_commands.html';">
+                        <h3>
+                            LINUX COMMANDS
+                        </h3>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </aside>
+
+
+    </div>
+
+</body>
+
+</html>

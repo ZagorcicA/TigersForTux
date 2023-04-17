@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apps</title>
+    <link rel="stylesheet" href="../assets/css/grid.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.4/jquery.touchSwipe.min.js"></script>
+    <script src="../assets/js/javascript.js"></script>
+    <script src="../assets/js/swipe.js" defer></script>
+
+</head>
+
+<body id='body' onload="setNavColor(119,133,172); onScrollBars();">
+
+    <div id="nav" class="sidenav">
+
+        <div id="hamMenu" class="bur" onclick="openNavBar()"></div>
+
+        <div class="search abc" onclick="search()"></div>
+
+        <div class="bookmark abc" onclick="bookmark()"></div>
+
+        <div class="gotop abc" onclick="goTop()"></div>
+
+    </div>
+
+    <div id="navO" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNavBar()">&times;</a>
+        <div class="moveTop">
+            <a class="top" href="../index.html">Homepage</a>
+        </div>
+
+        <div class="overlay-content">
+
+            <div class="left">
+                <h4 class="unixNav">GENERAL</h4>
+                <div class="linksAll">
+                    <a href="unix.html">About UNIX</a>
+                    <a href="linux.html">About LINUX</a>
+                    <a href="distros.html">Distros</a>
+                    <a href="apps.html">Essential Apps</a>
+                    <a href="linux_potential.html">Linux potential</a>
+                </div>
+            </div>
+
+            <div class="left">
+                <h4 class="linuxNav">GUIDES</h4>
+                <div class="linksAll">
+                    <a href="install.html">Installation</a>
+                    <a href="basic_commands.html">Commands</a>
+                    <a href="advanced_commands.html">Advanced Commands</a>
+                    <a href="errors.html">Common Errors</a>
+                    <a href="task_examples.html">Task examples</a>
+                    <a href="text_editors.html">Text Editors</a>
+
+                </div>
+
+            </div>
+            <div class="left">
+                <h4 class="ftNav">FILE TRANSFER</h4>
+                <div class="linksAll">
+                    <a href="file_transfer.html">File transfer protocols</a>
+                    <a href="server_client.html">Filezilla</a>
+                    <a href="lamp_stack.html">Lamp Stack</a>
+                </div>
+            </div>
+
+            <div class="left">
+                <h4 class="otherNav">ADDITIONAL</h4>
+                <div class="linksAll">
+                    <a href="op_systems.html">OS Comparison</a>
+                    <a href="software_dev_mod.html">Software Development & Modification</a>
+                    <a href="linux_osx.html">Linux & OS X</a>
+                    <a href="forum.html">Forum</a>
+                    <a href="sources.html">Sources</a>
+                </div>
+            </div>
+
+
+
+        </div>
+
+    </div>
+    <div id="placeholder">
+        <div id="bg_white">
+            <div class="wrapper_2">
+
+                <header>
+                    <h1>
+                        ESSENTIAL APPS FOR LINUX
+                    </h1>
+                </header>
+                <div class="logo">
+                    <img id="icon" src="../assets/media/logo2.png" alt="logo" />
+                </div>
+
+                <main>
+
+                    <div id="content_grid">
+
+                        <img class="img_one" src="../assets/media/TestyTest.png" alt="" />
+
+                        <div class="text_one">
+                            <h2>
+                                Thunderbird
+                            </h2>
+
+                            <p>
+                                &#x27A4; Free to use email client
+                                <br />
+                                <br />&#x27A4; User can add multiple email accounts and database contains settings for all common providers
+                                <br />
+                                <br />&#x27A4; Can be enhanced by add-ons such as the Lightning extension, which adds a functioning Calendar to Thunderbird
+                            </p>
+                        </div>
+
+                        <div class="text_two">
+
+                            <h2>
+                                LibreOffice
+                            </h2>
+
+                            <p>
+                                &#x27A4; Free office apps
+                                <br />
+                                <br /> &#x27A4; Writer (word processor), Calc (spreadsheet software), Impress (presentation app) are preinstalled in Ubuntu. Also, there are Draw (vector graphics editor), Math (mathematical formulae composer), Base (database
+                                manager)
+                                <br />
+                                <br /> &#x27A4; Uses ODF (Open Document Format) which can also open Microsoft Office files
+                            </p>
+
+                        </div>
+
+                        <img class="img_two" src="../assets/media/TestyTest.png" alt="" />
+
+                        <img class="img_three" src="../assets/media/TestyTest.png" alt="" />
+
+                        <div class="text_three">
+
+                            <h2>
+                                Timeshift
+                            </h2>
+
+                            <p>
+                                &#x27A4; Used to keep backups of driver updates and configuration changes
+                                <br />
+                                <br /> &#x27A4; Works similar to the System Restore feature in Windows and the Time Machine tool in Mac OS.
+                            </p>
+
+                            <h2>
+                                Gparted
+                            </h2>
+
+                            <p>
+                                &#x27A4; Best Linux Partition Manager
+                                <br />
+                                <br /> &#x27A4; Gparted can resize, copy and move partitions without data loss, which can grow or shrink users C: drive, create space for new OS, attempt data rescue from lost partitions
+                            </p>
+
+                        </div>
+
+                        <div class="text_four">
+
+                            <h2>
+                                Transmission
+                            </h2>
+
+                            <p>
+                                &#x27A4; Free and open-source torrent client
+                                <br />
+                                <br /> &#x27A4; No pop-up ads
+                                <br />
+                                <br /> &#x27A4; Uses less CPU than other GUI clients
+                            </p>
+
+                            <h2>
+                                Sophos
+                            </h2>
+
+                            <p>
+                                &#x27A4; Linux Antivirus
+                                <br />
+                                <br /> &#x27A4; Its supports on-demand scanning and also real-time scanning feature
+                            </p>
+
+                        </div>
+
+                        <img class="img_four" src="../assets/media/TestyTest.png" alt="" />
+
+                        <img class="img_five" src="../assets/media/TestyTest.png" alt="" />
+
+                        <div class="text_five">
+
+                            <h2>
+                                Open Shot
+                            </h2>
+
+                            <p>
+                                &#x27A4;Video editing software
+                                <br />
+                                <br /> &#x27A4; Modern and simple UI
+                                <br />
+                                <br /> &#x27A4; Over 800 stylish effects
+                                <br />
+                                <br /> &#x27A4; Can import and export into any video, audio and photo format
+                            </p>
+
+                            <h2>
+                                KeePassXC
+                            </h2>
+
+                            <p>
+                                &#x27A4; Password manager
+                                <br />
+                                <br /> &#x27A4; Requires no internet connection
+                                <br />
+                                <br /> &#x27A4; Cross-platform & open source
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </main>
+
+                <aside>
+                    <div class="sticky">
+                        <div class="aside_content">
+                            <h2>Explore</h2>
+
+                            <div id="gradient">
+                                <img class="scrollLogo" src="../assets/media/logo_white.png" alt="logo" />
+                            </div>
+
+                        </div>
+
+                        <div class="explore">
+                            <div class="relatedSites" onclick="window.location='basic_commands.html';">
+                                <h3>
+                                    ABOUT <br /> LINUX
+                                </h3>
+                            </div>
+
+                            <div class="relatedSites" onclick="window.location='basic_commands.html';">
+                                <h3>
+                                    LINUX COMMANDS
+                                </h3>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </aside>
+
+
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

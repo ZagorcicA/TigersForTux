@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Commands</title>
+    <link rel="stylesheet" href="../assets/css/grid.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.4/jquery.touchSwipe.min.js"></script>
+    <script src="../assets/js/javascript.js"></script>
+    <script src="../assets/js/swipe.js" defer></script>
+</head>
+
+<body id='body' onload="setNavColor(246,218,72); onScrollBars();">
+
+    <div id="nav" class="sidenav">
+
+        <div id="hamMenu" class="bur" onclick="openNavBar()"></div>
+
+        <div class="search abc" onclick="search()"></div>
+
+        <div class="bookmark abc" onclick="bookmark()"></div>
+
+        <div class="gotop abc" onclick="goTop()"></div>
+
+    </div>
+
+    <div id="navO" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNavBar()">&times;</a>
+        <div class="moveTop">
+            <a class="top" href="../index.html">Homepage</a>
+        </div>
+
+        <div class="overlay-content">
+
+            <div class="left">
+                <h4 class="unixNav">GENERAL</h4>
+                <div class="linksAll">
+                    <a href="unix.html">About UNIX</a>
+                    <a href="linux.html">About LINUX</a>
+                    <a href="distros.html">Distros</a>
+                    <a href="apps.html">Essential Apps</a>
+                    <a href="linux_potential.html">Linux potential</a>
+                </div>
+            </div>
+
+            <div class="left">
+                <h4 class="linuxNav">GUIDES</h4>
+                <div class="linksAll">
+                    <a href="install.html">Installation</a>
+                    <a href="basic_commands.html">Commands</a>
+                    <a href="advanced_commands.html">Advanced Commands</a>
+                    <a href="errors.html">Common Errors</a>
+                    <a href="task_examples.html">Task examples</a>
+                    <a href="text_editors.html">Text Editors</a>
+
+                </div>
+
+            </div>
+            <div class="left">
+                <h4 class="ftNav">FILE TRANSFER</h4>
+                <div class="linksAll">
+                    <a href="file_transfer.html">File transfer protocols</a>
+                    <a href="server_client.html">Filezilla</a>
+                    <a href="lamp_stack.html">Lamp Stack</a>
+                </div>
+            </div>
+
+            <div class="left">
+                <h4 class="otherNav">ADDITIONAL</h4>
+                <div class="linksAll">
+                    <a href="op_systems.html">OS Comparison</a>
+                    <a href="software_dev_mod.html">Software Development & Modification</a>
+                    <a href="linux_osx.html">Linux & OS X</a>
+                    <a href="forum.html">Forum</a>
+                    <a href="sources.html">Sources</a>
+                </div>
+            </div>
+
+
+
+        </div>
+
+    </div>
+
+
+    <div id="moveRight" class="wrapper_2">
+
+        <header>
+            <h1>
+                ADVANCED COMMANDS
+            </h1>
+
+        </header>
+
+        <div class="logo">
+            <img id="icon" src="../assets/media/logo2.png" alt="logo">
+        </div>
+
+        <main>
+
+            <div id="content_grid_2">
+
+                <div class="text_cont">
+                    <h2>
+                        GREP
+                    </h2>
+
+                    <dl>
+                        <dt>
+                            GREP Command in Unix:
+                        </dt>
+                        <dd>
+                            &#x27A4; Used to determine whether the search criteria are available in the file, and if they are, it prints the matching lines
+                        </dd>
+                    </dl>
+
+
+                </div>
+
+                <div class="img_cont">
+                    <img src="../assets/media/TestyTest.png" alt="img">
+                </div>
+
+                <div class="text_cont">
+                    <h2>
+                        Whoami
+                    </h2>
+
+                    <dl>
+                        <dt>
+                            Whoami Command in Unix:
+                        </dt>
+                        <dd>
+                            &#x27A4; Used to identify who is logged into the server (username)
+                        </dd>
+                    </dl>
+                </div>
+
+                <div class="img_cont">
+                    <img src="../assets/media/TestyTest.png" alt="img">
+                </div>
+
+
+                <div class="text_cont">
+                    <h2>
+                        Passwd
+                    </h2>
+
+                    <dl>
+                        <dt>
+                            Passwd Command in Unix:
+                        </dt>
+                        <dd>
+                            &#x27A4; Used to change the password
+                        </dd>
+                        <dd>
+                            &#x27A4; It will ask for the old password and then prompt you to choose a new one
+                        </dd>
+                    </dl>
+                </div>
+
+                <div class="img_cont">
+                    <img src="../assets/media/TestyTest.png" alt="img">
+                </div>
+
+
+                <div class="text_cont">
+                    <h2>
+                        Kill
+                    </h2>
+
+                    <dl>
+                        <dt>
+                            Kill Command in Unix:
+                        </dt>
+                        <dd>
+                            &#x27A4; Used to stop an already executing process
+                        </dd>
+                        <dd>
+                            &#x27A4; It is necessary to locate the PID of the process that should be killed and use that PID as the argument
+                        </dd>
+                    </dl>
+                </div>
+
+                <div class="img_cont">
+                    <img src="../assets/media/TestyTest.png" alt="img">
+                </div>
+
+
+                <div class="text_cont">
+                    <h2>
+                        Ps-Ef
+                    </h2>
+
+                    <dl>
+                        <dt>
+                            Ps -Ef Command in Unix:
+                        </dt>
+                        <dd>
+                            &#x27A4; Used to find the PID (Process ID, Unique number of the process) of the process
+                        </dd>
+                    </dl>
+                </div>
+
+                <div class="img_cont">
+                    <img src="../assets/media/TestyTest.png" alt="img">
+                </div>
+
+
+                <div class="text_cont">
+                    <h2>
+                        ftp
+                    </h2>
+
+                    <dl>
+                        <dt>
+                            ftp Command in Unix:
+                        </dt>
+                        <dd>
+                            &#x27A4; Used to transfer the files from one server to another server. All you need is the server's name and password
+                        </dd>
+                    </dl>
+                </div>
+
+                <div class="img_cont">
+                    <img src="../assets/media/TestyTest.png" alt="img">
+                </div>
+
+
+                <div class="text_cont">
+                    <h2>
+                        Find
+                    </h2>
+
+                    <dl>
+                        <dt>
+                            Find Command in Unix:
+                        </dt>
+                        <dd>
+                            &#x27A4; Used to find the files from the specified directory
+                        </dd>
+                    </dl>
+                </div>
+
+                <div class="img_cont">
+                    <img src="../assets/media/TestyTest.png" alt="img">
+                </div>
+
+
+                <div class="text_cont">
+                    <h2>
+                        Date
+                    </h2>
+
+                    <dl>
+                        <dt>
+                            Date Command in Unix:
+                        </dt>
+                        <dd>
+                            &#x27A4; Used to learn the current time in a server
+                        </dd>
+                    </dl>
+
+                    <ul>
+                        <li>
+                            <ul>
+                                <li>
+                                    &#x27A3; current month – <span class="code">date + %m</span>
+                                </li>
+                                <li>
+                                    &#x27A3; current day of month – <span class="code">date + %d</span>
+                                </li>
+                                <li>
+                                    &#x27A3; the year – <span class="code">date + %y</span>
+                                </li>
+                                <li>
+                                    &#x27A3; the hour – <span class="code">date + %H</span>
+                                </li>
+                                <li>
+                                    &#x27A3; the minute – <span class="code">date + %M</span>
+                                </li>
+                                <li>
+                                    &#x27A3; the second – <span class="code">date + %S</span>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <div class="img_cont">
+                    <img src="../assets/media/TestyTest.png" alt="img">
+                </div>
+
+
+                <div class="text_cont">
+                    <h2>
+                        Clear
+                    </h2>
+
+                    <dl>
+                        <dt>
+                            Clear Command in Unix:
+                        </dt>
+                        <dd>
+                            &#x27A4; Used to clear the screen
+                        </dd>
+                        <dd>
+                            &#x27A4; The current window's content is cleaned, and the cursor is moved to the first line of the window
+                        </dd>
+                    </dl>
+                </div>
+
+                <div class="img_cont">
+                    <img src="../assets/media/TestyTest.png" alt="img">
+                </div>
+
+
+                <div class="text_cont">
+                    <h2>
+                        Sort
+                    </h2>
+
+                    <dl>
+                        <dt>
+                            Sort Command in Unix:
+                        </dt>
+                        <dd>
+                            &#x27A4; Used to arrange the lines of text alphabetically
+                        </dd>
+                    </dl>
+
+                    <ul>
+                        <li>
+                            <ul>
+                                <li>
+                                    &#x27A3; <span class="code">SORT -N:</span> - sorts text into alphabets and numeric lines sorts from low to high value
+                                </li>
+                                <li>
+                                    &#x27A3; <span class="code">SORT -R:</span> - sorts text from the files in reverse order
+                                </li>
+                                <li>
+                                    &#x27A3; <span class="code">SORT -F:</span> - sorts upper and lowercase texts together
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <div class="img_cont">
+                    <img src="../assets/media/TestyTest.png" alt="img">
+                </div>
+
+
+                <div class="text_cont">
+                    <h2>
+                        Aliases
+                    </h2>
+
+                    <dl>
+                        <dt>
+                            Aliases Command in Unix:
+                        </dt>
+                        <dd>
+                            &#x27A4; Used to create a representation for another command
+                        </dd>
+                        <dd>
+                            &#x27A4; The command <span class="code">clear</span> could be written as "c" after using alias c clear command
+                        </dd>
+                    </dl>
+                </div>
+
+                <div class="img_cont">
+                    <img src="../assets/media/TestyTest.png" alt="img">
+                </div>
+
+                <div class="text_cont">
+                    <h2>
+                        Gzip
+                    </h2>
+
+                    <dl>
+                        <dt>
+                            Gzip Command in Unix:
+                        </dt>
+                        <dd>
+                            &#x27A4; Used to compress files
+                        </dd>
+                    </dl>
+                    <ul>
+                        <li>
+                            <ul>
+                                <li>
+                                    &#x27A3; <span class="code">gzip filename</span>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="img_cont">
+                    <img src="../assets/media/TestyTest.png" alt="img">
+                </div>
+
+
+                <div class="text_cont">
+                    <h2>
+                        Gunzip
+                    </h2>
+
+                    <dl>
+                        <dt>
+                            Gunzip Command in Unix:
+                        </dt>
+                        <dd>
+                            &#x27A4; Used for uncompressing files compressed by gzip
+                        </dd>
+                    </dl>
+                    <ul>
+                        <li>
+                            <ul>
+                                <li>
+                                    &#x27A3; <span class="code">gunzip filename</span>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="img_cont">
+                    <img src="../assets/media/TestyTest.png" alt="img">
+                </div>
+
+
+                <div class="text_cont">
+                    <h2>
+                        Gzcat
+                    </h2>
+
+                    <dl>
+                        <dt>
+                            GGzcat Command in Unix:
+                        </dt>
+                        <dd>
+                            &#x27A4; Used for looking at a zipped file without actually having to gunzip it
+                        </dd>
+                    </dl>
+                    <ul>
+                        <li>
+                            <ul>
+                                <li>
+                                    &#x27A3; <span class="code">gzcat filename</span>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="img_cont">
+                    <img src="../assets/media/TestyTest.png" alt="img">
+                </div>
+
+            </div>
+        </main>
+
+        <aside>
+            <div class="sticky">
+                <div class="aside_content">
+                    <h2>Explore</h2>
+
+                    <div id="gradient">
+                        <img class="scrollLogo" src="../assets/media/logo_white.png" alt="logo" />
+                    </div>
+
+                </div>
+
+                <div class="explore">
+                    <div class="relatedSites" onclick="window.location='basic_commands.html';">
+                        <h3>
+                            ABOUT <br /> LINUX
+                        </h3>
+                    </div>
+
+                    <div class="relatedSites" onclick="window.location='basic_commands.html';">
+                        <h3>
+                            LINUX COMMANDS
+                        </h3>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </aside>
+
+
+    </div>
+
+</body>
+
+</html>

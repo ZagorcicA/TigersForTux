@@ -1,0 +1,921 @@
+body {
+    background-color: rgb(255, 255, 255);
+    /* font-style: italic; */
+    font-family: 'Source Sans Pro', sans-serif;
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    color: rgb(72, 64, 80);
+    /* margin-top: 2rem; */
+    line-height: 1.5;
+    margin: 0;
+}
+
+#bg_white {
+    background-color: rgba(255, 255, 255, 0.759);
+}
+
+img {
+    width: 90%;
+}
+
+
+/**************************************************/
+
+
+/******************* HOME PAGE ********************/
+
+#frame {
+    position: relative;
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#rectangle1 {
+    background-color: rgb(88, 82, 125);
+    width: 80px;
+    height: 460px;
+    top: 0px;
+    left: 25%;
+    position: absolute;
+    z-index: -999;
+}
+
+#rectangle2 {
+    background-color: rgb(203, 109, 62);
+    width: 80px;
+    height: 500px;
+    top: 0px;
+    left: 65%;
+    position: absolute;
+    z-index: -999;
+}
+
+#rectangle3 {
+    background-color: rgb(227, 225, 107);
+    width: 600px;
+    height: 80px;
+    top: 30%;
+    left: 25px;
+    position: absolute;
+    z-index: -999;
+}
+
+#rectangle4 {
+    background-color: rgb(94, 166, 217);
+    width: 740px;
+    height: 80px;
+    top: 70%;
+    left: 65px;
+    position: absolute;
+    z-index: -999;
+}
+
+
+/******************** LAYOUT *********************/
+
+#index_wrapper {
+    margin: 0px 0px 0px 80px;
+    padding: 1rem 1rem;
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 100vh;
+}
+
+#unixLinux {
+    /* margin: 4rem 0rem; */
+    width: 50%;
+    padding: 5rem 0rem;
+    display: block;
+    margin: 0 auto;
+}
+
+#homeMenu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "unix linux";
+    grid-gap: 3rem;
+}
+
+#unix {
+    grid-area: unix;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 90%;
+}
+
+#unix img {
+    border-bottom: 4px solid black;
+    width: 90%;
+}
+
+#linux {
+    grid-area: linux;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 90%;
+}
+
+#linux img {
+    border-bottom: 4px solid black;
+    padding-bottom: 50px;
+    width: 90%;
+}
+
+#unix {
+    grid-area: unix;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 400px;
+    margin-top: 100px;
+    /* border: 1px solid black;
+    border-radius: 20px; */
+}
+
+#unix:hover {
+    transform: scale(1.2);
+}
+
+#linux {
+    grid-area: linux;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 400px;
+    margin-top: 50px;
+}
+
+#linux:hover {
+    transform: scale(1.2);
+}
+
+
+/****************************************************/
+
+
+/******************* CONTENT SITES ******************/
+
+h1 {
+    font-size: 4.5vw;
+    font-style: italic;
+    margin-left: 1.8rem;
+}
+
+header {
+    grid-area: header;
+}
+
+nav {
+    grid-area: nav;
+}
+
+.logo {
+    grid-area: logo;
+    place-self: center;
+    /* width: 50%; */
+}
+
+main {
+    grid-area: main;
+    margin-right: 8%;
+}
+
+aside {
+    grid-area: aside;
+    /* border-left: 5px solid black; */
+}
+
+.command {
+    padding: 0;
+    /* color: rgb(72, 64, 80); */
+    color: rgb(237, 110, 36);
+    font-weight: bold;
+    text-align: left;
+}
+
+
+/**********************************************************************/
+
+
+/*********************** SETTING UP ASIDE MENU ************************/
+
+.sticky {
+    position: sticky;
+    top: 0;
+    text-align: center;
+    /* margin: 1rem 2rem 0rem 8rem; */
+}
+
+.aside_content {
+    display: grid;
+    grid-template-columns: 65% 35%;
+    grid-template-rows: auto;
+    grid-template-areas: "h2 scroll_logo";
+    margin: 2rem 0.5rem;
+    padding-top: 1%;
+    text-align: center;
+}
+
+.aside_content h2 {
+    grid-area: h2;
+    text-align: left;
+    font-size: 2.4vw;
+    /* padding: 3% 0%; */
+}
+
+#gradient {
+    grid-area: scroll_logo;
+    padding: 0;
+    margin: 0;
+    width: 90%;
+}
+
+.scrollLogo {
+    /* object-fit: fill; */
+    padding: 0;
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+}
+
+h3 {
+    font-size: 1.8vw;
+    margin: 0;
+    padding: 20% 25%;
+    text-align: center;
+    color: white;
+}
+
+
+/************************ HYPERLINK DIVS IN ASIDE **********************/
+
+.explore {
+    /* display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "one", "two"; */
+    text-align: center;
+}
+
+.relatedSites {
+    background-image: linear-gradient(rgba(175, 173, 173, 0.3), rgba(20, 20, 20, 0.7)), url("../media/AsidePlaceholder.png");
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    background-position: center;
+    margin: 15%;
+    /* width: 80%; */
+    /* align-content: center;
+    display: block;
+    margin: 0 auto; */
+    transition: transform ease-in-out 0.4s;
+    cursor: pointer;
+}
+
+.relatedSites:hover {
+    transform: translate(0, -15px);
+    cursor: pointer;
+}
+
+
+/**********************************************************/
+
+
+/***************** 2ND WRAPPER FOR GRID *******************/
+
+.wrapper_2 {
+    display: grid;
+    /* height: 100vh; */
+    grid-template-columns: 10% 2fr 15% 10%;
+    grid-template-rows: auto;
+    grid-template-areas: "header2 header2 header2 logo2" "main2 main2  aside2 aside2";
+    grid-gap: 3.5rem 0.4rem;
+    margin: 1.5em;
+    margin-left: 80px;
+}
+
+header {
+    grid-area: header2;
+}
+
+.logo {
+    grid-area: logo2;
+    place-self: center;
+}
+
+main {
+    grid-area: main2;
+}
+
+aside {
+    grid-area: aside2;
+}
+
+
+/**********************************************************/
+
+
+/********************* NAVIGATION *************************/
+
+.sidenav {
+    height: 100%;
+    width: 80px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(88, 82, 125);
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+#nav>div {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    background: none;
+    text-decoration: none;
+    color: white;
+    display: block;
+    border: none;
+    outline: none;
+    font-size: 20px;
+}
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.moveTop {
+    text-align: center;
+}
+
+.top {
+    text-decoration: none;
+    border: none;
+    background: none;
+    font-size: 36px;
+}
+
+.closebtn {
+    margin-left: 50px;
+    text-decoration: none;
+    border: none;
+    background: none;
+    font-size: 50px;
+}
+
+.left {
+    float: left;
+    width: 20%;
+    margin-left: 3%;
+}
+
+h4 {
+    text-align: center;
+    font-style: normal;
+    font-size: 2.2vw;
+    color: white;
+    text-decoration: underline;
+}
+
+.unixNav {
+    text-decoration-color: orange;
+}
+
+.linuxNav {
+    text-decoration-color: yellow;
+}
+
+.ftNav {
+    text-decoration-color: rgb(211, 197, 221);
+}
+
+.otherNav {
+    text-decoration-color: blue;
+}
+
+.linksAll {
+    margin: auto;
+}
+
+.linksAll a {
+    padding: 6px 8px 6px 16px;
+    background: none;
+    text-decoration: none;
+    color: #818181;
+    display: block;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.overlay a {
+    color: #818181;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+    color: #f1f1f1;
+}
+
+.bur {
+    background-image: url("../media/menu_O.png");
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bur:hover {
+    background-image: url("../media/menu_NO_white.png");
+}
+
+.search {
+    background-image: url("../media/search_NO_o.png");
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.search:hover {
+    background-image: url("../media/search_NO-W.png");
+}
+
+.bookmark {
+    background-image: url("../media/pdf_O.png");
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bookmark:hover {
+    background-image: url("../media/pdf_W.png");
+}
+
+.gotop {
+    background-image: url("../media/up_o.png");
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.gotop:hover {
+    background-image: url("../media/up_W.png");
+}
+
+
+/**********************************************************/
+
+
+/********** SETTING UP CONTENT ON GENERAL PAGES ***********/
+
+#content_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "img1 t1 t1" "t2 t2 img2" "img3 t3 t3" "t4 t4 img4" "img5 t5 t5";
+}
+
+.img_one {
+    grid-area: img1;
+}
+
+.text_one {
+    grid-area: t1;
+}
+
+.text_two {
+    grid-area: t2;
+}
+
+#img_two {
+    grid-area: img2;
+}
+
+.img_three {
+    grid-area: img3;
+}
+
+.text_three {
+    grid-area: t3;
+}
+
+.text_four {
+    grid-area: t4;
+}
+
+.img_four {
+    grid-area: img4;
+}
+
+.img_five {
+    grid-area: img5;
+}
+
+.text_five {
+    grid-area: t5;
+}
+
+main div>h2 {
+    text-align: center;
+    font-size: 2.4vw;
+}
+
+main div>p {
+    font-size: 1.1vw;
+    text-align: left;
+    margin: 3rem 2em;
+    align-self: center;
+}
+
+main div>img {
+    place-self: center;
+}
+
+main div ul li {
+    font-size: 1.1vw;
+    list-style: none;
+    margin: 1.5rem;
+    font-style: italic;
+}
+
+
+/**********************************************************/
+
+
+/********* SETTING UP CONTENT ON DETAILED PAGES ***********/
+
+#content_grid_2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "main";
+}
+
+div>h2 {
+    text-align: left;
+    margin: 1rem;
+}
+
+.command_h2 {
+    text-align: left;
+}
+
+div>ul {
+    text-align: left;
+}
+
+#content_grid_2>div {
+    margin: 1rem 0rem;
+}
+
+#content_grid_2 .img_cont {
+    place-self: center;
+    margin: 1.5rem;
+    padding: 0;
+}
+
+.command {
+    margin: 0rem 3rem;
+    text-decoration: underline;
+    font-style: italic;
+    font-size: 1.4vw;
+}
+
+#content_grid_2 .text_cont ol {
+    font-size: 1.1vw;
+    /* list-style: none; */
+    margin: 1.5rem;
+    margin-left: 2.6rem;
+    font-style: italic;
+}
+
+#content_grid_2 .text_cont dl {
+    font-size: 1.1vw;
+    margin: 1.5rem;
+    margin-left: 2.6rem;
+    font-style: italic;
+}
+
+#content_grid_2 .text_cont dl dd {
+    margin: 1.5rem;
+}
+
+.indent {
+    margin: 0rem 4rem;
+}
+
+
+/**********************************************************/
+
+
+/********************* SOURCES LAYOUT *********************/
+
+.wrapper_src {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr auto;
+    margin: 0.4rem 0.4rem 0.4rem 85px;
+}
+
+#logo_src {
+    width: 40%;
+    justify-self: right;
+}
+
+.src_list {
+    color: #6c6588;
+    list-style: none;
+}
+
+.src_list li {}
+
+.src_list li ul {
+    list-style: none;
+}
+
+.src_list li ul li a {
+    color: rgb(203, 109, 62);
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+#cont_src_m {
+    margin: 0% 5%;
+}
+
+#cont_src_m>p {
+    margin-top: 5%;
+}
+
+
+/**********************************************************/
+
+
+/******** MEDIA QUERIES FOR SMALLER SCREENS LAYOUT ********/
+
+@media only screen and (max-width:850px) {
+    #content_grid,
+    #content_grid_2 {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: "t1" "img1" "t2" "img2" "t3" "img3" "t4" "img4" "t5" "img5";
+    }
+    .left {
+        margin: auto;
+        float: none;
+        overflow: hidden;
+        max-height: 50px;
+        transition: 0.4s ease-in-out;
+        width: 80%;
+    }
+    .left:hover {
+        max-height: 100rem;
+    }
+    .linksAll {
+        padding: 6px 4px;
+    }
+    .explore {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: "both";
+    }
+    main div>h2 {
+        text-align: center;
+        font-size: 16px;
+    }
+    main div>p {
+        font-size: 12px;
+        text-align: left;
+        margin: 2rem 2em;
+        align-self: center;
+    }
+    main div>img {
+        place-self: center;
+        margin-bottom: 2rem;
+        width: 50%;
+    }
+    main div ul li {
+        font-size: 10px;
+        list-style: none;
+        margin: 1.5rem;
+        font-style: italic;
+    }
+    .aside_content h2 {
+        font-size: 20px;
+    }
+    .scrollLogo {
+        width: 40%
+    }
+}
+
+@media only screen and (max-width:1050px) {
+    main div>p {
+        font-size: 12px;
+        text-align: left;
+        margin: 2rem 2em;
+        align-self: center;
+    }
+}
+
+@media only screen and (max-width:650px) {
+    #content_grid,
+    #content_grid_2 {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: "t1" "img1" "t2" "img2" "t3" "img3" "t4" "img4" "t5" "img5";
+    }
+    main div>p {
+        font-size: 2.2vw;
+    }
+    main div>h2 {
+        text-align: center;
+        font-size: 16px;
+    }
+    main div>p {
+        font-size: 12px;
+        text-align: left;
+        margin: 2rem 2em;
+        align-self: center;
+    }
+    main div>img {
+        place-self: center;
+        margin-bottom: 2rem;
+        width: 50%;
+    }
+    main div ul li {
+        font-size: 10px;
+        list-style: none;
+        margin: 1.5rem;
+        font-style: italic;
+    }
+    .aside_content {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: "one";
+    }
+    .aside_content h2 {
+        grid-area: one;
+        font-size: 16px;
+        margin: 0rem 0.5rem
+    }
+    #gradient {
+        display: none;
+    }
+    .relatedSites h3 {
+        font-size: 16px;
+    }
+    .relatedSites {
+        /* padding: 0; */
+    }
+    aside {
+        border-left: 0px;
+    }
+    .sidenav {
+        position: absolute;
+        width: 30px;
+    }
+    .bur,
+    .gotop,
+    .bookmark,
+    .search {
+        visibility: hidden;
+    }
+    .sidenav.open-sidebar {
+        width: 60px;
+    }
+    .bur.vis,
+    .gotop.vis,
+    .bookmark.vis,
+    .search.vis {
+        visibility: visible;
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media only screen and (max-width:850px) {
+    .wrapper_2 {
+        grid-template-columns: 85% 15%;
+        grid-template-rows: auto;
+        grid-template-areas: "header2 logo2" "main2 main2" "aside2 aside2";
+        grid-gap: 2rem 0.4rem;
+    }
+    .logo {
+        width: 80%;
+        justify-self: right;
+    }
+    aside {
+        border: 0px;
+    }
+    #content_grid_2 {
+        margin: 0.2rem 0.4rem;
+    }
+    .wrapper_2 header,
+    .wrapper_2 .logo {
+        padding-bottom: 0;
+    }
+    .img_cont img {
+        place-self: center;
+        display: block;
+        margin: 0 auto;
+        width: 60%;
+    }
+    .command {
+        font-size: 16px;
+    }
+    .text_cont>h2 {
+        font-size: 20px;
+    }
+    .text_cont>ul li,
+    .text_cont ol li,
+    .text_cont dl dt,
+    .text_cont dl dd {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width:650px) {
+    .wrapper_2 {
+        grid-template-columns: 85% 15%;
+        grid-template-rows: auto;
+        grid-template-areas: "header2 logo2", "nav nav", "main2 main2", "aside2 aside2";
+        grid-gap: 1rem 0.4rem;
+    }
+    .img_cont {
+        place-self: center;
+        margin-bottom: 0rem;
+        width: 100%;
+    }
+    .left {
+        margin: auto;
+        float: none;
+        overflow: hidden;
+        max-height: 50px;
+        transition: 0.4s ease-in-out;
+        width: 80%;
+    }
+    .left:hover {
+        max-height: 100rem;
+    }
+    .linksAll {
+        padding: 6px 4px;
+    }
+    div.img_cont {
+        margin: 0rem 0.4rem;
+    }
+    .img_cont img {
+        place-self: center;
+        display: block;
+        margin: 0 auto;
+        width: 40%;
+    }
+    div.text_cont {
+        margin: 0rem 0.4rem;
+    }
+    #content_grid_2 {
+        margin: 0rem;
+    }
+}

@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Common Errors</title>
+    <link rel="stylesheet" href="../assets/css/grid.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.4/jquery.touchSwipe.min.js"></script>
+    <script src="../assets/js/javascript.js"></script>
+    <script src="../assets/js/swipe.js" defer></script>
+
+</head>
+
+<body id='body' onload="setNavColor(246,218,72); onScrollBars();">
+
+    <div id="nav" class="sidenav">
+
+        <div id="hamMenu" class="bur" onclick="openNavBar()"></div>
+
+        <div class="search abc" onclick="search()"></div>
+
+        <div class="bookmark abc" onclick="bookmark()"></div>
+
+        <div class="gotop abc" onclick="goTop()"></div>
+
+    </div>
+
+    <div id="navO" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNavBar()">&times;</a>
+        <div class="moveTop">
+            <a class="top" href="../index.html">Homepage</a>
+        </div>
+
+        <div class="overlay-content">
+
+            <div class="left">
+                <h4 class="unixNav">GENERAL</h4>
+                <div class="linksAll">
+                    <a href="unix.html">About UNIX</a>
+                    <a href="linux.html">About LINUX</a>
+                    <a href="distros.html">Distros</a>
+                    <a href="apps.html">Essential Apps</a>
+                    <a href="linux_potential.html">Linux potential</a>
+                </div>
+            </div>
+
+            <div class="left">
+                <h4 class="linuxNav">GUIDES</h4>
+                <div class="linksAll">
+                    <a href="install.html">Installation</a>
+                    <a href="basic_commands.html">Commands</a>
+                    <a href="advanced_commands.html">Advanced Commands</a>
+                    <a href="errors.html">Common Errors</a>
+                    <a href="task_examples.html">Task examples</a>
+                    <a href="text_editors.html">Text Editors</a>
+
+                </div>
+
+            </div>
+            <div class="left">
+                <h4 class="ftNav">FILE TRANSFER</h4>
+                <div class="linksAll">
+                    <a href="file_transfer.html">File transfer protocols</a>
+                    <a href="server_client.html">Filezilla</a>
+                    <a href="lamp_stack.html">Lamp Stack</a>
+                </div>
+            </div>
+
+            <div class="left">
+                <h4 class="otherNav">ADDITIONAL</h4>
+                <div class="linksAll">
+                    <a href="op_systems.html">OS Comparison</a>
+                    <a href="software_dev_mod.html">Software Development & Modification</a>
+                    <a href="linux_osx.html">Linux & OS X</a>
+                    <a href="forum.html">Forum</a>
+                    <a href="sources.html">Sources</a>
+                </div>
+            </div>
+
+
+
+        </div>
+
+    </div>
+
+    <div id="moveRight" class="wrapper_2">
+
+        <header>
+            <h1>
+                COMMON ERRORS
+            </h1>
+
+        </header>
+
+        <div class="logo">
+            <img id="icon" src="../assets/media/logo2.png" alt="logo">
+        </div>
+
+        <main>
+
+            <div id="content_grid_2">
+
+                <div class="text_cont">
+                    <h2>
+                        Linux driver problems
+                    </h2>
+                    <p>
+                        Try not to hope to track down Linux drivers on the CD that comes with your totally new doohickey. That is not on the grounds that the producers couldn't care less about Linux but since drivers for most gadgets are as of now introduced on your framework
+                        as portion modules.
+                        <br />Part modules can be stacked from the order line or a startup record, however the HAL/D-BUS framework as a rule perceives equipment and burdens the modules naturally.
+
+                    </p>
+
+                </div>
+
+                <div class="img_cont">
+                    <img src="../assets/media/TestyTest.png" alt="img">
+                </div>
+
+
+                <div class="text_cont">
+                    <h2>
+                        Linux wireless networking problems
+                    </h2>
+                    <p>
+                        If there is one topic that causes more detaching from hair than some other, it's remote systems administration, what with in-portion and outsider modules, also the utilization of Windows drivers if all else fails.
+                        <br />At that point, you have the different encryption strategies and an assortment of organization the board frameworks to fight with. As with all such things, when you separate it into basic steps, one complex problem turns into
+                        a progression of a lot less difficult ones.
+                    </p>
+
+                </div>
+
+                <div class="img_cont">
+                    <img src="../assets/media/TestyTest.png" alt="img">
+                </div>
+
+
+                <div class="text_cont">
+                    <h2>
+                        Wi-Fi drivers
+                    </h2>
+                    <p>
+                        Generally speaking, Wi-Fi drivers keep on being quite possibly the most problematic technical issues confronting Linux. Many Broadcom remote cards are accessible, and nitty-gritty directions for inspiring them to work with every conveyance is very involved
+                        for a solitary article, however, the essential investigating steps are something similar:
+
+                        <ul>
+                            <li>
+                                &#x27A4; learn precisely which Broadcom card you have by utilizing lspci to figure out the PCI ID
+                            </li>
+                            <li>
+                                &#x27A4; decide if the dissemination you use upholds that card
+                            </li>
+                            <li>
+                                &#x27A4; also, in the event that it does, recognize the legitimate method for getting the card working
+                            </li>
+                        </ul>
+
+                    </p>
+
+                </div>
+
+                <div class="img_cont">
+                    <img src="../assets/media/TestyTest.png" alt="img">
+                </div>
+
+
+                <div class="text_cont">
+                    <h2>
+                        Printer drivers
+                    </h2>
+                    <p>
+                        Printers additionally keep on being problematic, with Canon and Lexmark more than once referred to for being an issue. Assuming that you're buying another printer, research compatibility before you purchase. Yet, assuming you are moving from another operating
+                        system, that may not be a choice.
+                        <br />
+                        <br />On the off chance that you are doing explore, the 'Open Printing' data set and the authority support channel for your dispersion are the two best places to begin. Note that you ought to guarantee all usefulness of a gadget
+                        is completely viable, particularly assuming it's a multifunction item. One normal protest with Canon printers is that the drivers are frequently just accessible on non-English and once in a while dark destination.
+                    </p>
+
+                </div>
+
+                <div class="img_cont">
+                    <img src="../assets/media/TestyTest.png" alt="img">
+                </div>
+
+
+                <div class="text_cont">
+                    <h2>
+                        Installation
+                    </h2>
+                    <p>
+                        With a category this sweeping, it's nearly guaranteed to be high volume. All things considered, I don't realize that most would agree Linux has widespread establishment issues. By far most of introduces go true to form.
+                        <br />
+                        <br />The sheer assortment of equipment that Linux upholds, and almost limitless blends of equipment on which Linux introduces are endeavored, definitely lead to edge cases to a great extent. Remember that end clients seldom introduce
+                        other working frameworks, like Mac OS and Windows, really introduced on new gadgets.
+                    </p>
+
+                </div>
+
+                <div class="img_cont">
+                    <img src="../assets/media/TestyTest.png" alt="img">
+                </div>
+
+
+                <div class="text_cont">
+                    <h2>
+                        GRUB 2 Boot Loader fails to load
+                    </h2>
+                    <p>
+                        If the hardware is functioning properly, it is possible that the boot loader is corrupted, and Linux cannot start on the machine. In this case, it is necessary to repair the boot loader.
+                    </p>
+
+                </div>
+
+                <div class="img_cont">
+                    <img src="../assets/media/TestyTest.png" alt="img">
+                </div>
+
+
+                <div class="text_cont">
+                    <h2>
+                        No log-in or prompt appears
+                    </h2>
+                    <p>
+                        This conduct typically happens after a failed kernel upgrade, and it is known as a kernel alarm on account of the sort of blunder on the framework console that occasionally should be visible at the last phase of the cycle.
+                        <br />
+                        <br />On the off chance that, truth be told, the machine has quite recently been rebooted following a product update, the quick objective is to reboot it utilizing the old, demonstrated adaptation of the Linux part and related
+                        records.
+                    </p>
+
+                </div>
+
+                <div class="img_cont">
+                    <img src="../assets/media/TestyTest.png" alt="img">
+                </div>
+
+
+                <div class="text_cont">
+                    <h2>
+                        No graphical log-in
+                    </h2>
+                    <p>
+                        If the machine starts, but does not boot into the graphical log-in manager, anticipate problems either with the choice of the default systemd target or the configuration of the X Window System. To check the current systemd default target run the command
+                        sudo systemctl get-default.
+                    </p>
+                    <ul>
+                        <li>
+                            &#x27A4; If the value returned is not graphical.target, run the command sudo systemctl isolate graphical.target.
+                        </li>
+                        <li>
+                            &#x27A4;If the graphical log-in screen starts, log in and start YaST › System › Services Manager and set the Default System Target to Graphical Interface. </li>
+                    </ul>
+                    <p>
+                        From now on the System should boot into the graphical log-in screen. If the graphical log-in screen does not start even if having booted or switched to the graphical target, your desktop or X Window software is probably misconfigured or corrupted.
+                    </p>
+
+                </div>
+
+                <div class="img_cont">
+                    <img src="../assets/media/TestyTest.png" alt="img">
+                </div>
+
+
+                <div class="text_cont">
+                    <h2>
+                        Log-in problems
+                    </h2>
+                    <p>
+                        Log-in problems occur when your machine does boot to the expected welcome screen or log-in prompt, but refuses to accept the username and password, or accepts them but then does not behave properly.
+                    </p>
+
+                </div>
+
+                <div class="img_cont">
+                    <img src="../assets/media/TestyTest.png" alt="img">
+                </div>
+
+
+                <div class="text_cont">
+                    <h2>
+                        Valid username and password not accepted
+                    </h2>
+                    <p>
+                        This is by far the most common problem users encounter because there are many reasons this can occur. Depending on whether you use local user management and authentication or network authentication, log-in failures occur for different reasons.
+                    </p>
+
+                </div>
+
+                <div class="img_cont">
+                    <img src="../assets/media/TestyTest.png" alt="img">
+                </div>
+
+
+            </div>
+        </main>
+
+        <aside>
+            <div class="sticky">
+                <div class="aside_content">
+                    <h2>Explore</h2>
+
+                    <div id="gradient">
+                        <img class="scrollLogo" src="../assets/media/logo_white.png" alt="logo" />
+                    </div>
+
+                </div>
+
+                <div class="explore">
+                    <div class="relatedSites" onclick="window.location='basic_commands.html';">
+                        <h3>
+                            ABOUT <br /> LINUX
+                        </h3>
+                    </div>
+
+                    <div class="relatedSites" onclick="window.location='basic_commands.html';">
+                        <h3>
+                            LINUX COMMANDS
+                        </h3>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </aside>
+
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linux</title>
+    <link rel="stylesheet" href="../assets/css/grid.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.4/jquery.touchSwipe.min.js"></script>
+    <script src="../assets/js/javascript.js"></script>
+    <script src="../assets/js/swipe.js" defer></script>
+
+</head>
+
+<body id='body' onload="setNavColor(119,133,172); onScrollBars();">
+
+    <div id="nav" class="sidenav">
+
+        <div id="hamMenu" class="bur" onclick="openNavBar()"></div>
+
+        <div class="search abc" onclick="search()"></div>
+
+        <div class="bookmark abc" onclick="bookmark()"></div>
+
+        <div class="gotop abc" onclick="goTop()"></div>
+
+    </div>
+
+    <div id="navO" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNavBar()">&times;</a>
+        <div class="moveTop">
+            <a class="top" href="../index.html">Homepage</a>
+        </div>
+
+        <div class="overlay-content">
+
+            <div class="left">
+                <h4 class="unixNav">GENERAL</h4>
+                <div class="linksAll">
+                    <a href="unix.html">About UNIX</a>
+                    <a href="linux.html">About LINUX</a>
+                    <a href="distros.html">Distros</a>
+                    <a href="apps.html">Essential Apps</a>
+                    <a href="linux_potential.html">Linux potential</a>
+                </div>
+            </div>
+
+            <div class="left">
+                <h4 class="linuxNav">GUIDES</h4>
+                <div class="linksAll">
+                    <a href="install.html">Installation</a>
+                    <a href="basic_commands.html">Commands</a>
+                    <a href="advanced_commands.html">Advanced Commands</a>
+                    <a href="errors.html">Common Errors</a>
+                    <a href="task_examples.html">Task examples</a>
+                    <a href="text_editors.html">Text Editors</a>
+
+                </div>
+
+            </div>
+            <div class="left">
+                <h4 class="ftNav">FILE TRANSFER</h4>
+                <div class="linksAll">
+                    <a href="file_transfer.html">File transfer protocols</a>
+                    <a href="server_client.html">Filezilla</a>
+                    <a href="lamp_stack.html">Lamp Stack</a>
+                </div>
+            </div>
+
+            <div class="left">
+                <h4 class="otherNav">ADDITIONAL</h4>
+                <div class="linksAll">
+                    <a href="op_systems.html">OS Comparison</a>
+                    <a href="software_dev_mod.html">Software Development & Modification</a>
+                    <a href="linux_osx.html">Linux & OS X</a>
+                    <a href="forum.html">Forum</a>
+                    <a href="sources.html">Sources</a>
+                </div>
+            </div>
+
+
+
+        </div>
+
+    </div>
+
+    <div id="placeholder">
+        <div id="bg_white">
+            <div class="wrapper_2">
+
+                <header>
+                    <h1>
+                        LINUX
+                    </h1>
+                </header>
+
+                <div class="logo">
+                    <img id="icon" src="../assets/media/logo2.png" alt="logo" />
+                </div>
+
+                <main>
+
+                    <div id="content_grid">
+
+                        <img class="img_one" src="../assets/media/TestyTest.png" alt="" />
+
+                        <div class="text_one">
+                            <h2>
+                                Origin
+                            </h2>
+
+                            <p>
+                                The operating System commonly known as Linux was created in 1991. It is thanks to a Finnish computer science student, Linus Torvalds, that we can use this open-source operating System.
+                                <br />
+                                <br /> Moreover, Linux is the most used open-source operating System today. This software program oversees simultaneous management of the resources on a computer, such as disk space and computer memory, and enables communication
+                                between the 'computer's software and hardware.
+                            </p>
+                        </div>
+
+                        <div class="text_two">
+
+                            <h2>
+                                Functionality
+                            </h2>
+
+                            <p>
+                                To elaborate further, the core function of Linux is run its own programs which manage the afore mentioned functions and potential devices that are attached to the computer, while also running programs initiated and requested by the user.
+                                <br />
+                                <br /> Much like UNIX, the core of Linux is "kernel". It is what powers the Linux operating system. Without it, the 'computer's software and hardware would be completely disconnected.
+                            </p>
+
+                        </div>
+
+                        <img class="img_two" src="../assets/media/TestyTest.png" alt="" />
+
+                        <img class="img_three" src="../assets/media/TestyTest.png" alt="" />
+
+                        <div class="text_three">
+
+                            <h2>
+
+                            </h2>
+
+                            <p>
+                                As an open-source operating system, Linux uses a type of kernel which is called "Monolithic Kernel". The tasks of this kernel are to encompass the CPU, memory, IPC, device drivers, file system management, and system server calls, while also being responsible
+                                for handing off free system memory to applications.
+                                <br />
+                                <br /> One of the most distinct differences between open and closed-source is that an open-source project is such a software project which allows access to its source code. To put it simply, every single person who has
+                                a computer and access to the internet can access and alter the source code of the Linux operating system if they had such intentions. Therefore, Linux has been modified by many developers since the year of its creation.
+                            </p>
+
+                        </div>
+
+                        <div class="text_four">
+
+                            <h2>
+                                Use & Popularity
+                            </h2>
+
+                            <p>
+                                According to reliable estimations by Wllen (2021), nearly 10,000 developers, from more than 1,000 companies have contributed to the Linux kernel. These modified versions of Linux are referred to as distributions, and they include the modifications of
+                                the Linux kernel along with other components of the overall System which were made for the users to customise it according to their needs.
+                                <br />
+                                <br /> Some of the major Linux companies that create these distributions are Red Hat, Canonical and SuSE.
+                            </p>
+
+                        </div>
+
+                        <img class="img_four" src="../assets/media/TestyTest.png" alt="" />
+
+                        <img class="img_five" src="../assets/media/TestyTest.png" alt="" />
+
+                        <div class="text_five">
+
+                            <h2>
+
+                            </h2>
+
+                            <p>
+                                Knowledge of the Linux operating system is one of the skills in highest demand on the job market in the IT field today. The number of sources grows continuously and warrants an equal or larger amount of research for one to keep up with all the new distros
+                                being created.
+                                <br />
+                                <br /> Once you have decided to learn how to use Linux, a good starting point is where can we access the kernel. As users get more familiar with the commands and processes possible in Linux, they open the doors to many
+                                potential applications and systems that rely on Linux in order to operate correctly.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </main>
+
+                <aside>
+                    <div class="sticky">
+                        <div class="aside_content">
+                            <h2>Explore</h2>
+
+                            <div id="gradient">
+                                <img class="scrollLogo" src="../assets/media/logo_white.png" alt="logo" />
+                            </div>
+
+                        </div>
+
+                        <div class="explore">
+                            <div class="relatedSites" onclick="window.location='basic_commands.html';">
+                                <h3>
+                                    ABOUT <br /> LINUX
+                                </h3>
+                            </div>
+
+                            <div class="relatedSites" onclick="window.location='basic_commands.html';">
+                                <h3>
+                                    LINUX COMMANDS
+                                </h3>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </aside>
+
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

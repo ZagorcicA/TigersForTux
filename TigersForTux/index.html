@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="assets/css/grid.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.4/jquery.touchSwipe.min.js"></script>
+    <script src="assets/js/javascript.js"></script>
+    <script src="assets/js/swipe.js" defer></script>
+
+</head>
+
+<body id='body' id='body' onload="setNavColor(203,109,62); changeIcon(true); onSiteLoaded();">
+
+
+    <div id="nav" class="sidenav">
+
+
+        <div id="hamMenu" class="bur" onclick="openNavBar()"></div>
+
+        <div id="search" class="search abc" onclick="search()"></div>
+
+        <div id="pdf" class="bookmark abc" onclick="bookmark()"></div>
+
+        <div id="top" class="gotop abc" onclick="goTop()"></div>
+
+    </div>
+
+    <div id="navO" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNavBar()">&times;</a>
+        <div class="moveTop">
+            <a class="top" href="index.html">Homepage</a>
+        </div>
+
+        <div class="overlay-content">
+
+            <div class="left">
+                <h4 class="unixNav">GENERAL</h4>
+                <div class="linksAll">
+                    <a href="sites/unix.html">About UNIX</a>
+                    <a href="sites/linux.html">About LINUX</a>
+                    <a href="sites/distros.html">Distros</a>
+                    <a href="sites/apps.html">Essential Apps</a>
+                    <a href="sites/linux_potential.html">Linux potential</a>
+                </div>
+            </div>
+
+            <div class="left">
+                <h4 class="linuxNav">GUIDES</h4>
+                <div class="linksAll">
+                    <a href="sites/install.html">Installation</a>
+                    <a href="sites/basic_commands.html">Commands</a>
+                    <a href="sites/advanced_commands.html">Advanced Commands</a>
+                    <a href="sites/errors.html">Common Errors</a>
+                    <a href="sites/task_examples.html">Task examples</a>
+                    <a href="sites/text_editors.html">Text Editors</a>
+
+                </div>
+
+            </div>
+            <div class="left">
+                <h4 class="ftNav">FILE TRANSFER</h4>
+                <div class="linksAll">
+                    <a href="sites/file_transfer.html">File transfer protocols</a>
+                    <a href="sites/server_client.html">Filezilla</a>
+                    <a href="sites/lamp_stack.html">Lamp Stack</a>
+                </div>
+            </div>
+
+            <div class="left">
+                <h4 class="otherNav">ADDITIONAL</h4>
+                <div class="linksAll">
+                    <a href="sites/op_systems.html">OS Comparison</a>
+                    <a href="sites/software_dev_mod.html">Software Development & Modification</a>
+                    <a href="sites/linux_osx.html">Linux & OS X</a>
+                    <a href="sites/forum.html">Forum</a>
+                    <a href="sites/sources.html">Sources</a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- BACKGROUND ANIMATION -->
+
+    <div id="frame">
+        <div id="rectangle1"></div>
+        <div id="rectangle2"></div>
+        <div id="rectangle3"></div>
+        <div id="rectangle4"></div>
+
+
+        <!-- PAGE CONTENT -->
+
+        <div id="index_wrapper">
+
+            <!-- <img id="home_logo" src="graphics/logo2.png" alt="logo"> -->
+
+            <header id="unixLinux">
+                <!-- <img class="title" src="graphics/UnixANDLinux_png.png" alt="title" /> -->
+
+            </header>
+
+            <div id="homeMenu">
+
+                <div id="unix">
+                    <a href="sites/unix.html">
+                        <img src="assets/media/unix_png.png" alt="unix" height="200px" width="100px" onclick="">
+                    </a>
+                </div>
+
+                <div id="linux">
+                    <a href="sites/linux.html">
+                        <img src="assets/media/linux_png.png" alt="linux" height="200px" width="100px">
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Editors</title>
+    <link rel="stylesheet" href="../assets/css/grid.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.4/jquery.touchSwipe.min.js"></script>
+    <script src="../assets/js/javascript.js"></script>
+    <script src="../assets/js/swipe.js" defer></script>
+
+</head>
+
+<body id='body' onload="setNavColor(246,218,72); onScrollBars();">
+
+
+    <div id="nav" class="sidenav">
+
+        <div id="hamMenu" class="bur" onclick="openNavBar()"></div>
+
+        <div class="search abc" onclick="search()"></div>
+
+        <div class="bookmark abc" onclick="bookmark()"></div>
+
+        <div class="gotop abc" onclick="goTop()"></div>
+
+    </div>
+
+    <div id="navO" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNavBar()">&times;</a>
+        <div class="moveTop">
+            <a class="top" href="../index.html">Homepage</a>
+        </div>
+
+        <div class="overlay-content">
+
+            <div class="left">
+                <h4 class="unixNav">GENERAL</h4>
+                <div class="linksAll">
+                    <a href="unix.html">About UNIX</a>
+                    <a href="linux.html">About LINUX</a>
+                    <a href="distros.html">Distros</a>
+                    <a href="apps.html">Essential Apps</a>
+                    <a href="linux_potential.html">Linux potential</a>
+                </div>
+            </div>
+
+            <div class="left">
+                <h4 class="linuxNav">GUIDES</h4>
+                <div class="linksAll">
+                    <a href="install.html">Installation</a>
+                    <a href="basic_commands.html">Commands</a>
+                    <a href="advanced_commands.html">Advanced Commands</a>
+                    <a href="errors.html">Common Errors</a>
+                    <a href="task_examples.html">Task examples</a>
+                    <a href="text_editors.html">Text Editors</a>
+
+                </div>
+
+            </div>
+            <div class="left">
+                <h4 class="ftNav">FILE TRANSFER</h4>
+                <div class="linksAll">
+                    <a href="file_transfer.html">File transfer protocols</a>
+                    <a href="server_client.html">Filezilla</a>
+                    <a href="lamp_stack.html">Lamp Stack</a>
+                </div>
+            </div>
+
+            <div class="left">
+                <h4 class="otherNav">ADDITIONAL</h4>
+                <div class="linksAll">
+                    <a href="op_systems.html">OS Comparison</a>
+                    <a href="software_dev_mod.html">Software Development & Modification</a>
+                    <a href="linux_osx.html">Linux & OS X</a>
+                    <a href="forum.html">Forum</a>
+                    <a href="sources.html">Sources</a>
+                </div>
+            </div>
+
+
+
+        </div>
+
+    </div>
+
+
+    <div id="moveRight" class="wrapper_2">
+
+        <header>
+            <h1>
+                TEXT EDITORS
+            </h1>
+
+        </header>
+
+        <div class="logo">
+            <img id="icon" src="../assets/media/logo2.png" alt="logo">
+        </div>
+
+        <main>
+
+            <div id="content_grid_2">
+
+                <div class="text_cont">
+                    <h2>
+                        Why text editors?
+                    </h2>
+
+                    <p>
+                        Working with Linux brings forth many software and processes to the user's disposal. The operating System itself features many applications and programs which are almost uniquely found on devices that use the Linux operating system.
+                        <br />That being said, the System comes with various text editors needed to execute the commands and perform different tasks. The command-line interface is therefore mostly mentioned in the same context as command-line text editors.
+                        <br />
+                        <br />Another "type" of editors would fall under GUI text editor, and both offer a variety of different editors to choose from with new ones being brought to the table frequently to accommodate to the users' needs. Much like with
+                        most thing related to Linux, it depends on the user's goal and the purpose of the tasks as to which text editor should be picked. The main goal of these programs is to enable easier coding, and therefore maximize the use and efficiency
+                        of the System while also making it easier and less time-consuming to use.
+                    </p>
+
+                </div>
+
+                <div class="img_cont">
+                    <img src="../assets/media/TestyTest.png" alt="img">
+                </div>
+
+                <div class="text_cont">
+
+                    <h2>
+                        Vim
+                    </h2>
+
+                    <p>
+                        This guide will mostly focus on Vim. This is the most used and naturally one of the best-known text editors. It is suitable for beginners and meets most, if not all requirements of users with advanced knowledge and experience.
+                        <br /> One of the reasons for this reputation is because the editor is supported by most Linux distros, while providing the same working environment regardless of the distribution that is being used. In addition, it was built on
+                        the model of the old UNIX Vi editor and modernized to fit the latest updates and features.
+                        <br />
+                        <br />Two such features are frequently emphasized among users, and those are its ability to highlight the syntax and one called the "Vi modes". Plainly speaking, this editor has two modes:
+                    </p>
+
+                    <ul>
+                        <li>
+                            &#x27A4; Command mode:
+                            <ul>
+                                <li>
+                                    &#x27A3; enables the user to perform actions on different files and is designed to execute commands (all that is typed here must be part of a command) – this is the mode the user is in when the editor is opened
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            &#x27A4; Insert mode:
+                            <ul>
+                                &#x27A3; enables the user to insert text in files (we switch to this mode by pressing the "i" key, to return to command mode, press Esc)
+                            </ul>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <div class="img_cont">
+                    <img src="../assets/media/TestyTest.png" alt="img">
+                </div>
+
+                <div class="text_cont">
+
+                    <h2>
+                        Vim & VSC
+                    </h2>
+
+                    <p>
+                        It is generally easy to invoke the Vim editor. The user types vi &lt;filename&gt; to either create a new file, or to edit an already existing one. To save a file, the user must type :wq to write and quit the file while being in Command mode.
+                        <br /> The best way to learn how a text editor is used, is to create a new file and try it out for yourself.
+                        <br />
+                        <br /> Alongside Vim, notable editors are also Nano, Gedit, Sublime text and VSCode. All of these are relatively simple to use due to how straightforward their design and use are, therefore all suitable for beginners and easy to
+                        use for experienced users. In terms of traits that make the editor easy to use, most also feature syntax highlighting, undo and redo options and a good command-palette.
+                        <br />
+                        <br /> That being said, we will single out VSCode, as this has been our starter at RIT Croatia. This is another popular and modern editor that supports a great number of programming languages, has debugging support which includes
+                        breakpoints, call stacks and an interactive console. Moreover, the editor also provides the user with a built-in terminal and support for Git commands. These traits make it greatly desirable when programming in Java and similar
+                        back-end languages.
+                    </p>
+
+                </div>
+
+                <div class="img_cont">
+                    <img src="../assets/media/TestyTest.png" alt="img">
+                </div>
+
+
+                <div class="text_cont">
+
+                    <h2>
+                        Additional features
+                    </h2>
+
+                    <p>
+                        On top of the afore mentioned functionality, the editor also enables parallel coding. This is of great help to front-end developers who work on multiple files and with multiple languages simultaneously.
+                        <br />To install the VSCode, users need to download the binary package and execute the following command for Debian and Ubuntu-based systems: sudo apt install ./
+                        <file>.deb.
+                    </p>
+
+                </div>
+
+                <div class="img_cont">
+                    <img src="../assets/media/TestyTest.png" alt="img">
+                </div>
+
+            </div>
+        </main>
+
+        <aside>
+            <div class="sticky">
+                <div class="aside_content">
+                    <h2>Explore</h2>
+
+                    <div id="gradient">
+                        <img class="scrollLogo" src="../assets/media/logo_white.png" alt="logo" />
+                    </div>
+
+                </div>
+
+                <div class="explore">
+                    <div class="relatedSites" onclick="window.location='basic_commands.html';">
+                        <h3>
+                            ABOUT <br /> LINUX
+                        </h3>
+                    </div>
+
+                    <div class="relatedSites" onclick="window.location='basic_commands.html';">
+                        <h3>
+                            LINUX COMMANDS
+                        </h3>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </aside>
+
+
+    </div>
+
+</body>
+
+</html>
